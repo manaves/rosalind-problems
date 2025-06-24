@@ -55,7 +55,7 @@ if __name__ == "__main__":
     
     # Input validation
     if len(s) > 10000:
-        raise ValueError(f"Sequence is too long, must be 1000 characters or less.")
+        raise ValueError(f"Sequence is too long, must be 10000 characters or less.")
     if not all(nt in 'ACGU' for nt in s.upper()):
         raise ValueError(f"Sequence contains invalid characters, only A, C, G, U are allowed.")
     
