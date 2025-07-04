@@ -7,21 +7,6 @@ Return: The total number of permutations of length n, followed by
 
 from itertools import permutations as perm
 
-def factorial(n):
-    """
-    Calculate the factorial of a number n.
-    
-    Parameters:
-        n (int): the number to calculate the factorial for.
-        
-    Returns:
-        int: the factorial of n.
-    """
-    fact = 1
-    for num in range(2, n + 1):
-        fact *= num
-    return fact
-
 def permutations(n):
     """
     Calculate the total number of permutations of length n and return a list of all such permutations.
