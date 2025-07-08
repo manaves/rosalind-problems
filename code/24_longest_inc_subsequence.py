@@ -12,6 +12,18 @@ Return: A longest increasing subsequence of π, followed by a longest decreasing
 """
 
 def longest_subsequence(n, permutation, inc):
+    """
+    Finds the longest increasing or decreasing subsequence in a given permutation.
+    
+    Parameters:
+        n (int): length of the permutation.
+        permutation (tuple): the permutation of integers.
+        inc (bool): if True, finds the longest increasing subsequence; 
+            if False, finds the longest decreasing subsequence.
+        
+    Returns:
+        list: the longest increasing or decreasing subsequence.
+    """
     # dp stores the length of the longest subsequence
     dp = [1]*n
     # prev stores the previous index in the subsequence
