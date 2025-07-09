@@ -14,7 +14,7 @@ def count_nucleotides(sequence):
     """
     Counts the occurrences of each nucleotide in the given DNA sequence.
     
-    Args:
+    Parameters:
         sequence (Seq): a DNA sequence.
         
     Returns:
