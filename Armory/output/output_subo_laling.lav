@@ -1,0 +1,263 @@
+# ../../fasta-36.3.8i/bin/lalign36 -m 9i ./Armory/data/seq1.fasta ./Armory/data/seq2.fasta -n -r +4/-8 -f -8 -g -8 -E 0.000000001 -m 0 -O ./Armory/output/output_subo_laling.lav
+LALIGN finds non-overlapping local alignments
+ version 36.3.8i May, 2023
+Please cite:
+ X. Huang and W. Miller (1991) Adv. Appl. Math. 12:373-381
+
+Query: ./Armory/data/seq1.fasta
+  1>>>Rosalind_8668 - 800 nt
+Library: ./Armory/data/seq2.fasta
+      870 residues in     1 sequences
+
+Statistics: (shuffled [500]) MLE statistics: Lambda= 0.3125;  K=0.2505
+ statistics sampled from 1 (1) to 500 sequences
+Threshold: E() < 1e-09 score: 105
+Algorithm: Smith-Waterman (SSE2, Michael Farrar 2006) (7.2 Nov 2010/SIMDe Nov 2020)
+Parameters: DNA matrix (4:-8), open/ext: -8/-8
+ Scan time:  0.680
+
+The best non-identical alignments are:     ls-w bits E(1) %_id  %_sim  alen
+Rosalind_9824                   ( 870) [f]  156 72.3 1.2e-16 0.976 0.976   42
++-                                          156 72.3 1.2e-16 1.000 1.000   39
++-                                          156 72.3 1.2e-16 1.000 1.000   39
++-                                          156 72.3 1.2e-16 1.000 1.000   39
++-                                          152 70.5 4.1e-16 1.000 1.000   38
++-                                          152 70.5 4.1e-16 0.976 0.976   41
++-                                          152 70.5 4.1e-16 0.976 0.976   41
++-                                          152 70.5 4.1e-16 1.000 1.000   38
++-                                          152 70.5 4.1e-16 1.000 1.000   38
++-                                          152 70.5 4.1e-16 1.000 1.000   38
++-                                          152 70.5 4.1e-16 1.000 1.000   38
++-                                          152 70.5 4.1e-16 1.000 1.000   38
++-                                          152 70.5 4.1e-16 1.000 1.000   38
++-                                          148 68.7 1.4e-15 0.975 0.975   40
++-                                          148 68.7 1.4e-15 1.000 1.000   37
++-                                          148 68.7 1.4e-15 1.000 1.000   37
++-                                          148 68.7 1.4e-15 1.000 1.000   37
++-                                          148 68.7 1.4e-15 1.000 1.000   37
++-                                          148 68.7 1.4e-15 1.000 1.000   37
++-                                          148 68.7 1.4e-15 1.000 1.000   37
++-                                          148 68.7 1.4e-15 1.000 1.000   37
+
+>>>Rosalind_8668, 800 nt vs ./Armory/data/seq2.fasta library
+
+>>Rosalind_9824                                           (870 nt)
+ Waterman-Eggert score: 156;  72.3 bits; E(1) <  1.2e-16
+97.6% identity (97.6% similar) in 42 nt overlap (656-697:449-490)
+
+         660       670       680       690       
+Rosali ATACAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGT
+       :: :::::::::::::::::::::::::::::::::::::::
+Rosali ATGCAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGT
+      450       460       470       480       490
+
+>--
+ Waterman-Eggert score: 156;  72.3 bits; E(1) <  1.2e-16
+100.0% identity (100.0% similar) in 39 nt overlap (658-696:822-860)
+
+       660       670       680       690      
+Rosali ACAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :::::::::::::::::::::::::::::::::::::::
+Rosali ACAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+             830       840       850       860
+
+>--
+ Waterman-Eggert score: 156;  72.3 bits; E(1) <  1.2e-16
+100.0% identity (100.0% similar) in 39 nt overlap (658-696:676-714)
+
+       660       670       680       690      
+Rosali ACAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :::::::::::::::::::::::::::::::::::::::
+Rosali ACAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+         680       690       700       710    
+
+>--
+ Waterman-Eggert score: 156;  72.3 bits; E(1) <  1.2e-16
+100.0% identity (100.0% similar) in 39 nt overlap (386-424:452-490)
+
+         390       400       410       420    
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGT
+       :::::::::::::::::::::::::::::::::::::::
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGT
+             460       470       480       490
+
+>--
+ Waterman-Eggert score: 152;  70.5 bits; E(1) <  4.1e-16
+100.0% identity (100.0% similar) in 38 nt overlap (660-697:727-764)
+
+     660       670       680       690       
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGT
+       ::::::::::::::::::::::::::::::::::::::
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGT
+        730       740       750       760    
+
+>--
+ Waterman-Eggert score: 152;  70.5 bits; E(1) <  4.1e-16
+97.6% identity (97.6% similar) in 41 nt overlap (656-696:278-318)
+
+         660       670       680       690      
+Rosali ATACAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       ::: :::::::::::::::::::::::::::::::::::::
+Rosali ATATAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       280       290       300       310        
+
+>--
+ Waterman-Eggert score: 152;  70.5 bits; E(1) <  4.1e-16
+97.6% identity (97.6% similar) in 41 nt overlap (482-522:189-229)
+
+             490       500       510       520  
+Rosali GCCAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGA
+       :: ::::::::::::::::::::::::::::::::::::::
+Rosali GCAAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGA
+      190       200       210       220         
+
+>--
+ Waterman-Eggert score: 152;  70.5 bits; E(1) <  4.1e-16
+100.0% identity (100.0% similar) in 38 nt overlap (484-521:823-860)
+
+           490       500       510       520 
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       ::::::::::::::::::::::::::::::::::::::
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+            830       840       850       860
+
+>--
+ Waterman-Eggert score: 152;  70.5 bits; E(1) <  4.1e-16
+100.0% identity (100.0% similar) in 38 nt overlap (484-521:677-714)
+
+           490       500       510       520 
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       ::::::::::::::::::::::::::::::::::::::
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+        680       690       700       710    
+
+>--
+ Waterman-Eggert score: 152;  70.5 bits; E(1) <  4.1e-16
+100.0% identity (100.0% similar) in 38 nt overlap (484-521:452-489)
+
+           490       500       510       520 
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       ::::::::::::::::::::::::::::::::::::::
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+             460       470       480         
+
+>--
+ Waterman-Eggert score: 152;  70.5 bits; E(1) <  4.1e-16
+100.0% identity (100.0% similar) in 38 nt overlap (387-424:727-764)
+
+        390       400       410       420    
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGT
+       ::::::::::::::::::::::::::::::::::::::
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTGT
+        730       740       750       760    
+
+>--
+ Waterman-Eggert score: 152;  70.5 bits; E(1) <  4.1e-16
+100.0% identity (100.0% similar) in 38 nt overlap (386-423:823-860)
+
+         390       400       410       420   
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       ::::::::::::::::::::::::::::::::::::::
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+            830       840       850       860
+
+>--
+ Waterman-Eggert score: 152;  70.5 bits; E(1) <  4.1e-16
+100.0% identity (100.0% similar) in 38 nt overlap (386-423:677-714)
+
+         390       400       410       420   
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       ::::::::::::::::::::::::::::::::::::::
+Rosali CAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+        680       690       700       710    
+
+>--
+ Waterman-Eggert score: 148;  68.7 bits; E(1) <  1.4e-15
+97.5% identity (97.5% similar) in 40 nt overlap (657-696:625-664)
+
+        660       670       680       690      
+Rosali TACAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :: :::::::::::::::::::::::::::::::::::::
+Rosali TATAGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+          630       640       650       660    
+
+>--
+ Waterman-Eggert score: 148;  68.7 bits; E(1) <  1.4e-15
+100.0% identity (100.0% similar) in 37 nt overlap (660-696:192-228)
+
+     660       670       680       690      
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :::::::::::::::::::::::::::::::::::::
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+             200       210       220        
+
+>--
+ Waterman-Eggert score: 148;  68.7 bits; E(1) <  1.4e-15
+100.0% identity (100.0% similar) in 37 nt overlap (485-521:727-763)
+
+          490       500       510       520 
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :::::::::::::::::::::::::::::::::::::
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+        730       740       750       760   
+
+>--
+ Waterman-Eggert score: 148;  68.7 bits; E(1) <  1.4e-15
+100.0% identity (100.0% similar) in 37 nt overlap (485-521:628-664)
+
+          490       500       510       520 
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :::::::::::::::::::::::::::::::::::::
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       630       640       650       660    
+
+>--
+ Waterman-Eggert score: 148;  68.7 bits; E(1) <  1.4e-15
+100.0% identity (100.0% similar) in 37 nt overlap (485-521:282-318)
+
+          490       500       510       520 
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :::::::::::::::::::::::::::::::::::::
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+             290       300       310        
+
+>--
+ Waterman-Eggert score: 148;  68.7 bits; E(1) <  1.4e-15
+100.0% identity (100.0% similar) in 37 nt overlap (387-423:628-664)
+
+        390       400       410       420   
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :::::::::::::::::::::::::::::::::::::
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       630       640       650       660    
+
+>--
+ Waterman-Eggert score: 148;  68.7 bits; E(1) <  1.4e-15
+100.0% identity (100.0% similar) in 37 nt overlap (387-423:282-318)
+
+        390       400       410       420   
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :::::::::::::::::::::::::::::::::::::
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+             290       300       310        
+
+>--
+ Waterman-Eggert score: 148;  68.7 bits; E(1) <  1.4e-15
+100.0% identity (100.0% similar) in 37 nt overlap (387-423:192-228)
+
+        390       400       410       420   
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+       :::::::::::::::::::::::::::::::::::::
+Rosali AGATAATGTTAGTAAGGGCGCCGCTGCAGCCCGCTTG
+             200       210       220        
+
+
+>>>///
+
+800 residues in 1 query   sequences
+870 residues in 1 library sequences
+ Scomplib [36.3.8i May, 2023]
+ start: Wed Jul 16 14:17:02 2025 done: Wed Jul 16 14:17:02 2025
+ Total Scan time:  0.680 Total Display time:  0.020
+
+Function used was LALIGN [36.3.8i May, 2023]
