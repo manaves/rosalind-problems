@@ -5,7 +5,6 @@ Return: The number of reads whose average quality is below the threshold.
 """
 
 from Bio import SeqIO
-import sys
 from io import StringIO
 
 def quality_control(records, threshold):
